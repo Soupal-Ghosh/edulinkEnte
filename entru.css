@@ -1,28 +1,53 @@
-*{
-    padding: 0;margin: 0;
-    /*background-color: #f1e5b7;*/
+* {
+    padding: 0;
+    margin: 0;
 }
-.title{
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1e5b7;
+    color: #333;
+}
+
+.title {
     justify-content: center;
     display: flex;
     background-color: #282626;
     color: #e1b60c;
-    margin: 0;
-    padding: 0;
+    padding: 1em;
     font-size: 2em;
+    text-align: center;
 }
-.intro,.lol,.video{
+
+.intro, .lol, .video {
     padding: 2vw;
-    font-size:2em;
+    font-size: 1.2em;
 }
-.total{
-    height:76vh;
+
+.total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 76vh;
 }
-.end{
+
+.end {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 19vh; 
     background-color: #80800a;
     color: antiquewhite;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.5em;
+        padding: 0.5em;
+    }
+    .intro, .lol, .video {
+        padding: 5vw;
+        font-size: 1em;
+    }
 }
